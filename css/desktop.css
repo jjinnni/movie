@@ -1,0 +1,471 @@
+@media (min-width: 1200px){
+    .pc{display: block;}
+    .m{display: none;}
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999999;
+        height: 100px;
+        padding: 0 40px;
+    }
+    header .util{
+        height: 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        padding: 0 20px; 
+        font-size: 12px;
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+    header .wrap{
+        max-width: 1320px;
+        margin: 0 auto;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+    }
+    header .wrap h1{
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        display: flex;
+        align-items: center;
+    }
+    header .wrap h1 img{
+        width: 200px;
+    }   
+    header .wrap .menubtn{
+        display: none;
+    }
+    header .wrap .calendarbtn{
+        display: none;
+    }
+    header .wrap nav{
+        display: flex;
+        width: 100%;
+        position: unset;
+        top: unset;
+        left: unset;
+        background-color: unset;
+        transition: all 0.2s; 
+        z-index: 99999;
+        padding: 20px;
+    }
+    header .wrap nav .navheader{
+        display:none;
+    }
+    header .wrap nav .gnb{
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: unset;
+        text-wrap: nowrap;
+    }
+    header .wrap nav .gnb .menu{
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+    }
+    header .wrap nav .gnb .menu > a{
+        padding: 20px 30px;
+    }
+    header .wrap nav .gnb .menu .submenu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: unset
+    } 
+    header .wrap nav .gnb .menu .submenu li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    header .wrap nav .gnb .menu .submenu li a:hover{
+        background-color: #3c3c3cb4;
+        border-radius: 8px;
+    }
+    header .wrap nav .navutil{
+        display: none;
+    }
+    main .mainSwiper1{
+        display: flex;
+        position: relative;
+    }
+    main .mainSwiper1::after{
+        z-index: 9999;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to top, #000000ff, #00000000);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    main .mainSwiper1 img{
+        width: 100%;
+        height: 100%; 
+    }
+    main .mainwrap{
+        padding: 0 40px;
+    }
+    main .wrap{
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+    main .wrap .photo{
+        display: flex;
+        padding-bottom: 100px;
+    }
+    main .wrap .photo .boxoffice{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: linear-gradient(135deg ,#9c258f ,#005dac);
+        width: calc(100% * 2 / 12);
+        margin-top: -180px;
+        z-index: 999;
+        margin-right: 30px;
+        padding: 30px;
+    }
+    main .wrap .photo .boxoffice .text{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    main .wrap .photo .boxoffice .direction{
+        display: flex;
+        gap: 10px;
+        font-weight: bold;
+    }
+    main .wrap .photo .boxoffice .direction .next{
+        border: 1px solid #fff;
+        padding: 4px 8px;
+    }
+    main .wrap .photo .boxoffice .direction .prev{
+        border: 1px solid #fff;
+        padding: 4px 8px;
+    }
+    main .wrap .photo .mainSwiper{
+        margin-top: -180px;
+        position: relative;
+        z-index: 999;
+    }
+    main .wrap .photo .mainSwiper .swiper-wrapper .swiper-slide img{
+        width: 100%;
+    }
+    main .wrap .box{
+        padding: 0 0 30px;
+    }
+    main .wrap .box .wrap{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+    }
+    main .wrap .box h3{
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+    main .wrap .box .wrap .box1{
+        padding-bottom: unset;
+        width: calc((100% - 40px) /3);
+    }
+    main .wrap .box .wrap .box2{
+        width: calc((100% - 40px) /3);
+    }
+    main .wrap .box .wrap .box1 .bgc ,
+    main .wrap .box .wrap .box2 .bgc{
+        padding: 20px 30px;
+        gap: 20px;
+
+    }
+    main .wrap .box .wrap .box3{
+        display: flex;
+        width: calc((100% - 40px) /3);
+    }
+    main .wrap .box .wrap .box3 .bgc{
+        background-color: #3c3c3c;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 20px;
+        width: 100%;
+    }
+    main .wrap .box .wrap .box3 .bgc .box3img img{
+        width: 80px;
+    } 
+    main .wrap .box .box3 .bgc .box3text .text1{
+        display: flex;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    main .wrap .box .wrap .box1 .bgc .box1text .text1 .text1-1,
+    main .wrap .box .wrap .box2 .bgc .box2text .text1 .text1-1,
+    main .wrap .box .wrap .box3 .bgc .box3text .text1 .text1-1{
+        font-size: 20px;
+        font-weight: bold;
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    main .wrap .box .wrap .box1 .bgc .box1text .text1 .text1-2,
+    main .wrap .box .wrap .box2 .bgc .box2text .text1 .text1-2,
+    main .wrap .box .wrap .box3 .bgc .box3text .text1 .text1-2{
+        border: 1px solid #fff;
+        border-radius: 4px;
+        padding: 2px 4px;
+        font-size: 12px;
+    }
+    main .wrap .box .wrap .box1 .bgc .box1text .text2,
+    main .wrap .box .wrap .box2 .bgc .box2text .text2,
+    main .wrap .box .wrap .box3 .bgc .box3text .text2{
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    main .wrap .box .wrap .box1 .bgc .box1text .text3 a,
+    main .wrap .box .wrap .box2 .bgc .box2text .text3 a,
+    main .wrap .box .wrap .box3 .bgc .box3text .text3 a{
+        border: 1px solid #4c4c4c;
+        border-radius: 4px;
+        background-color: #4c4c4c;
+        padding: 2px 8px;
+        font-size: 18px;
+    }
+    main .wrap .searchbox{
+        width: 100%;
+        padding: 100px 0;
+    }
+    main .wrap .searchbox .wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 40px;
+    }
+    main .wrap .searchbox .wrap .search{
+        display: flex;
+        justify-content: center;
+        width: calc(100% * 4 / 12);
+    }
+    main .wrap .searchbox .wrap .search input{
+        font-size: 20px;
+        font-weight: unset;
+    }
+    main .wrap .searchbox .wrap .text{
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        width: calc(100% * 5 / 12);
+    }
+    .slider {
+        padding: 0 40px 100px;
+    }
+    .slider h3{
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+    .slider .wrap{
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+    .slider .mySwiper{
+        padding: unset;
+    }
+    .slider .mySwiper .swiper-wrapper .swiper-slide img{
+        width: 100%;
+    }
+    .sec1{
+        width: 100%;
+        background-color: #3c3c3c;
+        padding: 100px 40px;
+    }
+    .sec1 h3{
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+    .sec1 .wrap{
+        max-width: 1320px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .sec1 .wrap .secSwiper{
+        padding: unset;
+        width: 100%;
+        background-color: unset;
+        order: 2;
+    }
+    .sec1 .wrap .secSwiper .swiper-wrapper .swiper-slide{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sec1 .wrap .secSwiper .swiper-wrapper .swiper-slide img{
+        width: 100%;
+    }
+    .sec1 .wrap .secSwiper .swiper-wrapper .swiper-slide .text{
+        width: 100%; 
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0; 
+        padding: 0; 
+    }
+    .sec1 .wrap .secSwiper .swiper-wrapper .swiper-slide .text .tit{
+        font-size: 20px;
+    }
+    .sec1 .wrap .secSwiper .swiper-wrapper .swiper-slide .text .date{
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    .sec1 .wrap .secSwiper .swiper-wrapper .swiper-slide .text .slidebtn .slidebtn1,
+    .sec1 .wrap .secSwiper .swiper-wrapper .swiper-slide .text .slidebtn .slidebtn2{
+        font-size: 18px;
+    }
+    .sec1 .wrap .btn {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap: 20px;
+        padding: 50px 0;
+        order: 1;
+    }
+    .sec1 .wrap .btn button{
+        width: 200px;
+        background-color: #4c4c4c;
+        border: 1px solid #4c4c4c;
+        border-radius: 4px;
+        padding: 8px 16px;
+        font-size: 20px;
+    }
+    .sec2{
+        padding: 100px 40px;
+    }
+    .sec2 .wrap{
+        display: flex;
+        gap: 30px;
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+    .sec2 .wrap .reviewSwiper{
+        padding: unset;
+        width: 100%;
+    }
+    .sec2 .wrap .reviewSwiper h3{
+        font-size: 30px;
+        padding-bottom: 50px;
+        justify-content: left;
+    }
+    .sec2 .wrap .reviewSwiper .swiper-wrapper {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: start;
+        gap: 20px;
+
+    }
+    .sec2 .wrap .reviewSwiper .swiper-wrapper .swiper-slide{
+        position: unset;
+        display: flex;
+        width: 100%;
+        gap: 10px;
+    }
+    .sec2 .wrap .reviewSwiper .swiper-wrapper .swiper-slide img{
+        width: 100px;
+    }
+    .sec2 .wrap .reviewSwiper .swiper-wrapper .swiper-slide .text{
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+    }
+    .sec2 .wrap .reviewSwiper .swiper-wrapper .swiper-slide .text .reviewbox{
+        position: unset;
+        top: unset;
+        left: unset;
+        padding: unset;
+    }
+    .sec2 .wrap .reviewSwiper .swiper-wrapper .swiper-slide .text .reviewtit{
+        justify-content: left;
+        padding-bottom: 10px;
+    }
+    .sec2 .wrap .reviewSwiper .swiper-wrapper .swiper-slide .text .reviewtext{
+        display: flex;
+        font-size: 14px;
+    }
+    .sec2 .tab .btn{
+        display: none;
+    }
+    .sec2 .tab .con{
+        background-color: unset;
+        padding: unset;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+    .sec2 .tab .con .notice,
+    .sec2 .tab .con .event{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec2 .tab .con .notice div,
+    .sec2 .tab .con .event div{ 
+        padding: unset; 
+    }
+    .sec2 .tab .con h3{
+        display: flex;
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+    .sec3{
+        padding: 0 40px 100px;
+    }
+    .sec3 h4{
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+    .sec3 .wrap{
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+    footer{
+        padding: 50px 40px;
+    }
+    footer .wrap{
+        max-width: 1320px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .wrap h2{
+        align-items: start;
+        padding: unset;
+    }
+    footer .wrap .text{
+        font-size: 14px;
+        text-align: unset;
+        padding: unset;
+    }
+    footer .wrap .text .link br{
+        display: none;
+    }
+    footer .wrap .sns{
+        align-items: end;
+    }
+}

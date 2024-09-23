@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="util">
+                <div><a href="#">LOGIN</a></div>
+                <div><a href="#">회원제안내</a></div>
+                <div><a href="#">고객센터</a></div>
+                <div><a href="#">ENG</a></div>
+            </div>
+            <div class="wrap">
+                <h1><a href="#"><img src="./imges/logo.png" alt="영화의 전당 로고 이미지"></a></h1>
+                <div class="menubtn">
+                    <button type="button"><img src="./imges/menubtn@2x.png" alt="메뉴 버튼"></button>
+                </div>
+                <div class="calendarbtn">
+                    <button type="button"><img src="./imges/calendar@2x.png" alt="상영시간표 이미지"></button>
+                </div>
+                <nav>
+                    <div class="navheader">
+                        <div class="logo"><a href="#"><img src="./imges/logo.png" alt="영화의 전당 로고 이미지"></a></div>
+                        <button class="close"><img src="./imges/closebtn.png" alt="닫기 버튼"></button>
+                        <div class="search"><a href="#"><img src="./imges/searchbtn.png" alt="검색 버튼"></a></div>
+                    </div>
+                    <ul class="gnb">
+                        <li class="menu"><a href="#">영화</a>
+                            <ul class="submenu">
+                                <li><a href="#">상영시간표</a></li>
+                                <li><a href="#">현재상영프로그램</a></li>
+                                <li><a href="#">상영예정프로그램</a></li>
+                                <li><a href="#">지난프로그램</a></li>
+                                <li><a href="#">영화와 비평</a></li>
+                                <li><a href="#">좌석배치도</a></li>
+                                <li><a href="#">대관</a></li>
+                                <li><a href="#">시네마테크소개</a></li>
+                                <li><a href="#">해외·공동주최영화제 소개</a></li>
+                                <li><a href="#">부산국제인공지능영화제</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="#">공연 / 전시</a>
+                            <ul class="submenu">
+                                <li><a href="#">공연가이드</a></li>
+                                <li><a href="#">공연일정</a></li>
+                                <li><a href="#">예매안내</a></li>
+                                <li><a href="#">지난공연</a></li>
+                                <li><a href="#">객석나눔</a></li>
+                                <li><a href="#">좌석배치도</a></li>
+                                <li><a href="#">대관</a></li>
+                                <li><a href="#">전시ㆍ행사일정</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="#">영화도서관</a>
+                            <ul class="submenu">
+                                <li><a href="#">영화도서관 소개</a></li>
+                                <li><a href="#">자료검색</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">행사안내</a></li>
+                                <li><a href="#">포토뉴스</a></li>
+                                <li><a href="#">필름아카이브</a></li>
+                                <li><a href="#">공간사용신청</a></li>
+                                <li><a href="#">영어프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="#">영화 / 예술아카데미</a>
+                            <ul class="submenu">
+                                <li><a href="#">아카데미 일정</a></li>
+                                <li><a href="#">영화 아카데미</a></li>
+                                <li><a href="#">예술 아카데미</a></li>
+                                <li><a href="#">어린이청소년 아카데미</a></li>
+                                <li><a href="#">시설/기자재</a></li>
+                                <li><a href="#">사용신청</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="#">이벤트 / 제휴</a>
+                            <ul class="submenu">
+                                <li><a href="#">진행중인이벤트</a></li>
+                                <li><a href="#">지난이벤트</a></li>
+                                <li><a href="#">당첨자발표</a></li>
+                                <li><a href="#">제휴</a></li>
+                                <li><a href="#">회원제안내</a></li>
+                                <li><a href="#">메세나 기업 모집</a></li>
+                                <li><a href="#">광고신청</a></li>
+                                <li><a href="#">촬영신청</a></li>
+                                <li><a href="#">투어신청</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="#">영화의전당</a>
+                            <ul class="submenu">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">CI소개</a></li>
+                                <li><a href="#">조직기구</a></li>
+                                <li><a href="#">운영방향</a></li>
+                                <li><a href="#">클린경영</a></li>
+                                <li><a href="#">건축개요</a></li>
+                                <li><a href="#">시설소개</a></li>
+                                <li><a href="#">편의시설</a></li>
+                                <li><a href="#">오시는길</a></li>
+                                <li><a href="#">주차안내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="navutil">
+                        <div><a href="#">LOGIN</a></div>
+                        <div><a href="#">회원제안내</a></div>
+                        <div><a href="#">고객센터</a></div>
+                        <div><a href="#">ENG</a></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="swiper mainSwiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./imges/Happinessphoto.png" alt="행복한나라 영화 사진"></a></div>
+                    <div class="swiper-slide"><img src="./imges/Victoryphoto.png" alt="빅토리 영화 사진"></a></div>
+                    <div class="swiper-slide"><img src="./imges/Twistersphoto.png" alt="트위스터스 영화 사진"></a></div>
+                    <div class="swiper-slide"><img src="./imges/Revolverphoto.png" alt="리볼버 영화 사진"></a></div>
+                    <div class="swiper-slide"><img src="./imges/insideoutphoto.png" alt="인사이드아웃2 영화 사진"></a></div>
+                </div>
+            </div>
+            <div class="mainwrap">
+                <div class="wrap">
+                    <div class="photo">
+                        <div class="boxoffice">
+                            <div class="text">박스오피스</div>
+                            <div class="direction">
+                                <div class="prev"><</div>
+                                <div class="next">></div>
+                            </div>
+                        </div>
+                        <div class="swiper mainSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="#"><img src="./imges/Happiness.jpg" alt="행복한나라 영화 포스터"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="./imges/victory.png" alt="빅토리 영화 포스터"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="./imges/Twisters.jpg" alt="트위스터스 영화 포스터"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="./imges/Revolver.jpg" alt="리볼버 영화 포스터"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="./imges/InsideOut2.jpg" alt="인사이드아웃2 영화 포스터"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                    <h3><a href="#">극장별 현재상영작</a></h3>
+                        <div class="wrap">
+                            <!-- 
+                                .wrap이 여러개 존재해야 함.
+                                그래서, 각 버튼을 누르면 순서에 해당되는 wrap이 출력(display: block;)됨
+                                이 떄, wrap들끼리 묶여져있어야 한다.
+    
+                                그런 다음, swiper의 속성 활용할 것.
+                                $(".swiper-slide").on("click", function() {
+                                    const i = 스와이퍼.realIndex;
+                                    $(".box .wrap").css("display", "none");
+                                    $(".box .wrap").eq(i).css("display", "block");
+                                });
+                            -->
+                            <div class="box1">
+                                <div class="bgc">
+                                    <div class="box1img"><img src="./imges/The Sacrifice.jpg" alt="희생 영화 포스터"></div>
+                                    <div class="box1text">
+                                        <div class="text1">
+                                            <div class="text1-1">(리플레이)희생</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-08-21(수) ~ 2024-08-27(화)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box2">
+                                <div class="bgc">
+                                    <div class="box2img"><img src="./imges/The Red Angel.jpg" alt="붉은 천사 영화 포스터"></div>
+                                    <div class="box2text">
+                                        <div class="text1">
+                                            <div class="text1-1">붉은 천사</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-08-13(화) ~ 2024-09-04(수)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box3">
+                                <div class="bgc">
+                                    <div class="box3img"><img src="./imges/The Black Test Car.jpg" alt="검정 테스트 카 포스터"></div>
+                                    <div class="box3text">
+                                        <div class="text1">
+                                            <div class="text1-1">검정 테스트 카</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-08-13(화) ~ 2024-09-04(수)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="box1">
+                                <div class="bgc">
+                                    <div class="box1img"><img src="./imges/Perfect Days.jpg" alt="퍼펙트 데이즈 포스터"></div>
+                                    <div class="box1text">
+                                        <div class="text1">
+                                            <div class="text1-1">퍼펙트 데이즈</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-07-03(수) ~ 2024-08-26(월)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box2">
+                                <div class="bgc">
+                                    <div class="box2img"><img src="./imges/The Wonders.jpg" alt="더 원더스 포스터"></div>
+                                    <div class="box2text">
+                                        <div class="text1">
+                                            <div class="text1-1">더 원더스</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-08-21(수) ~ 2024-08-27(화)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box3">
+                                <div class="bgc">
+                                    <div class="box3img"><img src="./imges/Divertimento.jpg" alt="디베르티멘토 포스터"></div>
+                                    <div class="box3text">
+                                        <div class="text1">
+                                            <div class="text1-1">디베르티멘토</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-08-07(수) ~ 2024-08-26(월)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="box1">
+                                <div class="bgc">
+                                    <div class="box1img"><img src="./imges/Shine.jpg" alt="행복한나라 영화 포스터"></div>
+                                    <div class="box1text">
+                                        <div class="text1">
+                                            <div class="text1-1">샤인</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-07-31(수) ~ 2024-08-28(수)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box2">
+                                <div class="bgc">
+                                    <div class="box2img"><img src="./imges/Jinju’s Pearl.jpg" alt="진주의 진주 포스터"></div>
+                                    <div class="box2text">
+                                        <div class="text1">
+                                            <div class="text1-1">진주의 진주</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-07-24(수) ~ 2024-08-28(수)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box3">
+                                <div class="bgc">
+                                    <div class="box3img"><img src="./imges/Mother's Kingdom.jpg" alt="엄마의 왕국 영화 포스터"></div>
+                                    <div class="box3text">
+                                        <div class="text1">
+                                            <div class="text1-1">엄마의 왕국</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-07-24(수) ~ 2024-08-28(수)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="box1">
+                                <div class="bgc">
+                                    <div class="box1img"><img src="./imges/Happiness.jpg" alt="행복한나라 영화 포스터"></div>
+                                    <div class="box1text">
+                                        <div class="text1">
+                                            <div class="text1-1">행복의나라</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-06-21(금) ~ 2024-07-31(수)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box2">
+                                <div class="bgc">
+                                    <div class="box2img"><img src="./imges/victory.png" alt="빅토리 영화 포스터"></div>
+                                    <div class="box2text">
+                                        <div class="text1">
+                                            <div class="text1-1">빅토리</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-06-21(금) ~ 2024-07-31(수)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box3">
+                                <div class="bgc">
+                                    <div class="box3img"><img src="./imges/Twisters.jpg" alt="트위스터스 영화 포스터"></div>
+                                    <div class="box3text">
+                                        <div class="text1">
+                                            <div class="text1-1">트위스터스</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-06-21(금) ~ 2024-07-31(수)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="box1">
+                                <div class="bgc">
+                                    <div class="box1img"><img src="./imges/uconcert.jpg" alt="2024 한밤의 유U;콘서트 포스터"></div>
+                                    <div class="box1text">
+                                        <div class="text1">
+                                            <div class="text1-1">2024 한밤의 유U;콘서트</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-08-21(수) ~ 2024-08-21(수)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box2">
+                                <div class="bgc">
+                                    <div class="box2img"><img src="./imges/comedy.jpg" alt="부산국제코미디페스티벌 포스터"></div>
+                                    <div class="box2text">
+                                        <div class="text1">
+                                            <div class="text1-1">부산국제코미디페스티벌</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-08-24(토) ~ 2024-08-24(토)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box3">
+                                <div class="bgc">
+                                    <div class="box3img"><img src="./imges/tenor.jpg" alt="테너 필모그라피 포스터"></div>
+                                    <div class="box3text">
+                                        <div class="text1">
+                                            <div class="text1-1">테너 필모그라피</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-08-30(금) ~ 2024-08-30(금)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="box1">
+                                <div class="bgc">
+                                    <div class="box1img"><img src="./imges/festival.jpg" alt="부산국제코미디페스티벌 포스터"></div>
+                                    <div class="box1text">
+                                        <div class="text1">
+                                            <div class="text1-1">부산국제코미디페스티벌</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-08-23(금) ~ 2024-08-23(금)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box2">
+                                <div class="bgc">
+                                    <div class="box2img"><img src="./imges/daedong.jpg" alt="2024 영호남민족예술대동제 포스터"></div>
+                                    <div class="box2text">
+                                        <div class="text1">
+                                            <div class="text1-1">2024 영호남민족예술대동제</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-09-01(일) ~ 2024-09-01(일)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box3">
+                                <div class="bgc">
+                                    <div class="box3img"><img src="./imges/concert2.jpg" alt="2024 두레라움토요야외콘서트 포스터"></div>
+                                    <div class="box3text">
+                                        <div class="text1">
+                                            <div class="text1-1">2024 두레라움토요야외콘서트</div>
+                                            <div class="text1-2">상영중</div>
+                                        </div>
+                                        <div class="text2">2024-09-07(토) ~ 2024-09-07(토)</div>
+                                        <div class="text3"><a href="#">예매하기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper btnSwiper">
+                        <div class="swiper-wrapper">
+                            <button class="swiper-slide btn1">시네마파크</button>
+                            <button class="swiper-slide btn2">소극장</button>
+                            <button class="swiper-slide btn3">인디+</button>
+                            <button class="swiper-slide btn4">중극장</button>
+                            <button class="swiper-slide btn5">하늘연극장</button>
+                            <button class="swiper-slide btn6">야외극장</button>
+                        </div>
+                    </div>
+                    <div class="searchbox">
+                        <div class="wrap">
+                            <div class="search">
+                                <input type="text" placeholder="영화 / 공연 / 행사명 등을 입력하세요">
+                                <button type="button"><img src="./imges/searchbtn.png" alt="버튼 이미지"></button>
+                            </div>
+                            <div class="text">
+                                <div class="textbtn">
+                                    <a href="#">
+                                    <div class="calendar"><img src="./imges/calender2.png" alt="상영시간표 이미지"></div>
+                                    <div class="caltext">상영시간표</div>
+                                    </a>
+                                </div>
+                                <div class="textbtn">
+                                    <a href="#">
+                                    <div class="ticket"><img src="./imges/ticket.png" alt="영화예매권 이미지"></div>
+                                    <div class="tickettext">영화예매권</div>
+                                    </a>
+                                </div>
+                                <div class="textbtn">
+                                    <a href="#">
+                                    <div class="package"><img src="./imges/package.png" alt="공연패키지 이미지"></div>
+                                    <div class="packagetext">공연패키지</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="slider">
+            <h3><a href="#">영화의 전당 이야기</a></h3>
+            <div class="wrap">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img class="m" src="./imges/slide1.png" alt="부산국제인공지능영화제 배너">
+                                <img class="pc" src="./imges/slide1pc.png" alt="부산국제인공지능영화제 배너">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img class="m" src="./imges/slide2.png" alt="영화의전당 사진전 배너">
+                                <img class="pc" src="./imges/slide2pc.png" alt="영화의전당 사진전 배너">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img class="m" src="./imges/slide3.png" alt="영화의전당 뉴스레터 배너">
+                                <img class="pc" src="./imges/slide3pc.png" alt="영화의전당 뉴스레터 배너">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img class="m" src="./imges/slide4.png" alt="영화의전당 예술아카데미 배너">
+                                <img class="pc" src="./imges/slide4pc.png" alt="영화의전당 예술아카데미 배너">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <section>
+            <div class="sec1">
+                <h3><a href="#">추천프로그램</a></h3>
+                <div class="wrap">
+                    <div class="swiper secSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="secimg"><a href="#"><img src="./imges/secslide1-1.png"></a></div>
+                                <div class="text">
+                                    <div class="tit">[시네마테크] 마스무라 야스조 탄생 100주년: 일본 뉴웨이브의 반항아들</div>
+                                    <div class="date">2024-08-13(화) ~ 2024-09-04(수)</div>
+                                    <div class="slidebtn">
+                                        <div class="slidebtn1"><a href="#">예매하기</a></div>
+                                        <div class="slidebtn2"><a href="#">상세보기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="secimg"><a href="#"><img src="./imges/secslide1-2.png"></a></div>
+                                <div class="text">
+                                    <div class="tit">2024 예술영화 프로그램</div>
+                                    <div class="date">2024-01-01(월) ~ 2024-12-31(화)</div>
+                                    <div class="slidebtn">
+                                        <div class="slidebtn1"><a href="#">예매하기</a></div>
+                                        <div class="slidebtn2"><a href="#">상세보기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="secimg"><a href="#"><img src="./imges/secslide1-3.png"></a></div>
+                                <div class="text">
+                                    <div class="tit">8월 한국독립영화 프로그램</div>
+                                    <div class="date">2024-08-01(목) ~ 2024-08-31(토)</div>
+                                    <div class="slidebtn">
+                                        <div class="slidebtn1"><a href="#">예매하기</a></div>
+                                        <div class="slidebtn2"><a href="#">상세보기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="secimg"><a href="#"><img src="./imges/secslide1-4.png"></a></div>
+                                <div class="text">
+                                    <div class="tit">2024 대중영화 프로그램</div>
+                                    <div class="date">2024-01-01(월) ~ 2024-12-31(화)</div>
+                                    <div class="slidebtn">
+                                        <div class="slidebtn1"><a href="#">예매하기</a></div>
+                                        <div class="slidebtn2"><a href="#">상세보기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="swiper secSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="secimg"><a href="#"><img src="./imges/secslide2-1.jpg"></a></div>
+                                <div class="text">
+                                    <div class="tit">공연정보 제공 서비스 알림 신청하기</div>
+                                    <div class="date">2022-01-01(토) ~ 2027-12-31(금)</div>
+                                    <div class="slidebtn">
+                                        <div class="slidebtn1"><a href="#">예매하기</a></div>
+                                        <div class="slidebtn2"><a href="#">상세보기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="secimg"><a href="#"><img src="./imges/secslide2-2.jpg"></a></div>
+                                <div class="text">
+                                    <div class="tit">2024 11시 영화음악콘서트 08월</div>
+                                    <div class="date">2024-08-28(수) ~ 2024-08-28(수)</div>
+                                    <div class="slidebtn">
+                                        <div class="slidebtn1"><a href="#">예매하기</a></div>
+                                        <div class="slidebtn2"><a href="#">상세보기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="secimg"><a href="#"><img src="./imges/secslide2-3.jpg"></a></div>
+                                <div class="text">
+                                    <div class="tit">테너 필모그라피 - 테너 조윤환 20회 독창회</div>
+                                    <div class="date">2024-08-30(금) ~ 2024-08-30(금)</div>
+                                    <div class="slidebtn">
+                                        <div class="slidebtn1"><a href="#">예매하기</a></div>
+                                        <div class="slidebtn2"><a href="#">상세보기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="secimg"><a href="#"><img src="./imges/secslide2-4.jpg"></a></div>
+                                <div class="text">
+                                    <div class="tit">2024 영호남민족예술대동제</div>
+                                    <div class="date">2024-09-01(일) ~ 2024-09-01(일)</div>
+                                    <div class="slidebtn">
+                                        <div class="slidebtn1"><a href="#">예매하기</a></div>
+                                        <div class="slidebtn2"><a href="#">상세보기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="swiper secSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="secimg"><a href="#"><img src="./imges/secslide3-1.jpg"></a></div>
+                                <div class="text">
+                                    <div class="tit">포스터 in 시네마테크</div>
+                                    <div class="date">2022-12-16(금) ~</div>
+                                    <div class="slidebtn">
+                                        <div class="slidebtn1"><a href="#">예매하기</a></div>
+                                        <div class="slidebtn2"><a href="#">상세보기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="secimg"><a href="#"><img src="./imges/secslide3-2.jpg"></a></div>
+                                <div class="text">
+                                    <div class="tit"><부다페스트 1900> 특별 사진전</div>
+                                    <div class="date">2023-10-16(월) ~ 2023-10-29(일)</div>
+                                    <div class="slidebtn">
+                                        <div class="slidebtn1"><a href="#">예매하기</a></div>
+                                        <div class="slidebtn2"><a href="#">상세보기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="secimg"><a href="#"><img src="./imges/secslide3-3.png"></a></div>
+                                <div class="text">
+                                    <div class="tit">제51회 어린이날큰잔치</div>
+                                    <div class="date">2024-05-05(일) ~ 2024-05-05(일)</div>
+                                    <div class="slidebtn">
+                                        <div class="slidebtn1"><a href="#">예매하기</a></div>
+                                        <div class="slidebtn2"><a href="#">상세보기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="secimg"><a href="#"><img src="./imges/secslide3-4.jpg"></a></div>
+                                <div class="text">
+                                    <div class="tit">사막의 속삭임: 아프리카의 숨결, 나마비아</div>
+                                    <div class="date">2024-05-10(금) ~ 2024-05-22(수)</div>
+                                    <div class="slidebtn">
+                                        <div class="slidebtn1"><a href="#">예매하기</a></div>
+                                        <div class="slidebtn2"><a href="#">상세보기</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="btn">
+                        <button type="button">영화</button>
+                        <button type="button">공연</button>
+                        <button type="button">전시 / 행사</button>
+                    </div>
+                </div>  
+            </div>
+            <div class="sec2">
+                <div class="wrap">
+                    <div class="swiper reviewSwiper">
+                        <h3><a href="#">영화비평</a></h3>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./imges/review1.png" alt="마거리트의 정리"></a>
+                                <div class="text">
+                                    <div class="reviewbox"><a href="#">오디오 해설 영화관</a></div>
+                                    <div class="reviewtit">마거리트의 정리</div>
+                                    <div class="reviewtext">
+                                        오디오 해설 영화관은 온라인으로<br>
+                                        언제 어디서나 쉽고 편리하게 만날 수 있는 영화해설을 진행합니다.</div>
+                                    </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./imges/review2.png" alt="더 납작 엎드릴게요"></a>
+                                <div class="text">
+                                    <div class="reviewbox"><a href="#">영화로운 시선</a></div>
+                                    <div class="reviewtit">더 납작 엎드릴게요</div>
+                                    <div class="reviewtext">
+                                        영화 <더 납작 엎드릴게요>는<br>
+                                        회사원의 애환을 다룬 ‘오피스 드라마’라고 할 수 있다.</div>  
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./imges/review3.png" alt="오키쿠와 세계"></a>
+                                <div class="text">
+                                    <div class="reviewbox"><a href="#">영화평론가 비평</a></div>
+                                    <div class="reviewtit">오키쿠와 세계</div>
+                                    <div class="reviewtext">
+                                        <오키쿠와 세계>라는 영화는<br>
+                                        우리나라에 『씨네21』 같은 영화잡지처럼 일본의 정평있는 영화잡지 『키네마 준보』 2023년 베스트10에서 1위를 했어요. </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./imges/review4.png" alt="가여운 것들"></a>
+                                <div class="text">
+                                    <div class="reviewbox"><a href="#">영화평론가 비평</a></div>
+                                    <div class="reviewtit">가여운 것들</div>
+                                    <div class="reviewtext">
+                                        한 여성 프랑켄슈타인의 성장담,<br> 
+                                        혹은 ’개체 발생은 계통 발생을 되풀이하는 것’ 같은 인류 역사의 발달사, 혹은 페미니즘에 대한 담론을 담은 영화 등 어떤 것으로도 읽혀질 수 있다고 생각합니다. </div>
+                                    </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./imges/review5.png" alt="판문점"></a>
+                                <div class="text">
+                                    <div class="reviewbox"><a href="#">영화와 인문학</a></div>
+                                    <div class="reviewtit">판문점 </div>
+                                    <div class="reviewtext">
+                                        송원근 감독이 연출한 다큐멘터리<br> 
+                                        <판문점>(2024)의 주인공은 ‘판문점’이다.</div>
+                                    </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="./imges/review6.png" alt="아주 오래된 미래도시"></a>
+                                <div class="text">
+                                    <div class="reviewbox"><a href="#">영화로운 시선</a></div>
+                                    <div class="reviewtit">아주 오래된 미래도시</div>
+                                    <div class="reviewtext">
+                                        인천의 원도심, 중구의 재개발과<br>
+                                        도시 재생을 다룬 다큐멘터리 영화 <아주 오래된 미래도시>는 서사가 있는 영화는 아니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="btn">
+                            <button class="on">공지사항</button>
+                            <button>행사안내</button>
+                        </div>
+                        <div class="con">
+                            <div class="notice on">
+                                <h3><a href="#">공지사항</a></h3>
+                                <div class="wrap">
+                                    <div class="text">
+                                        <div><a href="#">홈페이지 및 모바일(앱/웹) 서비스 점검</a></div>
+                                        <div><a href="#">[공지]영화관 해피머니 상품권 이용 중지 안내</a></div>
+                                        <div><a href="#">2024년 영화드라마 로케이션 투어 좀비 역 배우 모집</a></div>
+                                    </div>
+                                    <div class="date">
+                                        <div><a href="#">2024-07-29</a></div>
+                                        <div><a href="#">2024-07-26</a></div>
+                                        <div><a href="#">2024-07-24</a></div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="event">
+                                <h3><a href="#">행사안내</a></h3>
+                                <div class="wrap">
+                                    <div class="text">
+                                        <div><a href="#">[특별강연 안내] 8/3(토) 16:30 <시칠리아!> 특별 강연 '스트로브 & 위예'</a></div>
+                                        <div><a href="#">[큐레이팅] 8/3(토) 14:00 <제프 쿤스. 그 은밀한 초상></span></a></div>
+                                        <div><a href="#">[기획] 8/3(토)~8/25(일) 애니살롱전2024]</a></div>
+                                    </div>
+                                    <div class="date">
+                                        <div><a href="#">2024-07-29</a></div>
+                                        <div><a href="#">2024-07-25</a></div>
+                                        <div><a href="#">2024-07-25</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec3">
+                <h4><a href="#">유관기관</a></h4>
+                <div class="wrap">
+                    <div class="anim-wrap">
+                        <div class="anim">
+                            <div class=""><a href="#"><img src="./imges/sec3img1.png" alt="부산시립미술관 로고"></a></div>
+                            <div class=""><a href="#"><img src="./imges/sec3img2.png" alt="부산관광공사 로고"></a></div>
+                            <div class=""><a href="#"><img src="./imges/sec3img3.png" alt="부산영상위원회 로고"></a></div>
+                            <div class=""><a href="#"><img src="./imges/sec3img4.png" alt="국립해양박물관 로고"></a></div>
+                            <div class=""><a href="#"><img src="./imges/sec3img5.png" alt="부산문화재단 로고"></a></div>
+                            <div class=""><a href="#"><img src="./imges/sec3img6.png" alt="부산과학기술협의회 로고"></a></div>
+                        </div>
+                        <div class="anim">
+                            <div class=""><a href="#"><img src="./imges/sec3img1.png" alt="부산시립미술관 로고"></a></div>
+                            <div class=""><a href="#"><img src="./imges/sec3img2.png" alt="부산관광공사 로고"></a></div>
+                            <div class=""><a href="#"><img src="./imges/sec3img3.png" alt="부산영상위원회 로고"></a></div>
+                            <div class=""><a href="#"><img src="./imges/sec3img4.png" alt="국립해양박물관 로고"></a></div>
+                            <div class=""><a href="#"><img src="./imges/sec3img5.png" alt="부산문화재단 로고"></a></div>
+                            <div class=""><a href="#"><img src="./imges/sec3img6.png" alt="부산과학기술협의회 로고"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="wrap">
+                <h2><a href="#"><img src="./imges/logo_footer.png" alt="로고 무채색"></a></h2>
+                <div class="text">
+                    <div class="link">
+                        <div>
+                            <a href="#">
+                                개인정보처리방침&nbsp;&nbsp;이용약관&nbsp;&nbsp;장애인&nbsp;&nbsp;이용안내&nbsp;&nbsp;취소/환불 가이드<br>
+                                정보공개&nbsp;&nbsp;고객참여&nbsp;&nbsp;자유게시판&nbsp;&nbsp;오시는길/주차안내&nbsp;&nbsp;사이트맵
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text1">
+                        <a href="#">
+                            (우)48058 부산광역시 해운대구 수영강변대로 120
+                            영화의전당(우동 1467번지)<br>
+                            TEL. 051-780-6000/6080   Fax. 051-780-601
+                        </a>
+                    </div>
+                    <div class="text2">
+                        <a href="#">
+                            (재)영화의전당  대표자 김진해 사업자번호 : 617-82-11427<br>
+                            통신판매업신고 : 부산해운 제0510호 사업자정보 확인
+                        </a>
+                    </div>
+                    <div class="text3"><a href="#">COPYRIGHT(C) BUSAN CINEMA CENTER. ALL RIGHTS RESERVED</a></div>
+                </div>
+                <div class="sns">
+                    <div><a href="#"><img src="./imges/facebook.png" alt="페이스북"></a></div>
+                    <div><a href="#"><img src="./imges/instargram.png" alt="인스타그램"></a></div>
+                    <div><a href="#"><img src="./imges/youtube.png" alt="유투브"></a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
